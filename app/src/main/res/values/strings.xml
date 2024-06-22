@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fragmento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="filter_options">
+        <item>Empresa</item>
+        <item>Servicio</item>
+        <item>Producto</item>
+    </string-array>
+
+</resources>

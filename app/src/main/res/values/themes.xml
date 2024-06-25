@@ -1,9 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Base.Theme.Rantinaya" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/black</item>
     </style>
 
     <style name="Theme.Rantinaya" parent="Base.Theme.Rantinaya" />
+=======
+    <style name="Base.Theme.Fragmento" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Fragmento" parent="Base.Theme.Fragmento" />
+>>>>>>> 1ddd08b4469dc0066adb20b6eec2e790ce4d64d1
 </resources>

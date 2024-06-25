@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/listFragment"
+        android:icon="@drawable/ic_consultar"
+        android:title="Buscar" />
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/empresasFragment"
+        android:icon="@drawable/ic_listar"
+        android:title="Empresas" />
+    <item
+        android:id="@+id/ProductosFragment"
+        android:icon="@drawable/ic_productos"
+        android:title="Productos" />
+
+</menu>

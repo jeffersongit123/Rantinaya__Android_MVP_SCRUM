@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_productos"
+            android:title="Productos"
+            app:showAsAction="always">
+            <menu>
+                <item
+                    android:id="@+id/subitem_orellanaP"
+                    android:title="Orellana" />
+                <item
+                    android:id="@+id/subitem_sachaP"
+                    android:title="Sacha"/>
+                <item
+                    android:id="@+id/subitem_loretoP"
+                    android:title="Loreto"/>
+                <item
+                    android:id="@+id/subitem_aguaricoP"
+                    android:title="Aguarico"/>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_servicios"
+            android:title="Servicios"
+            app:showAsAction="always">
+            <menu>
+                <item
+                    android:id="@+id/subitem_orellanaS"
+                    android:title="Orellana"/>
+                <item
+                    android:id="@+id/subitem_sachaS"
+                    android:title="Sacha"/>
+                <item
+                    android:id="@+id/subitem_loretoS"
+                    android:title="Loreto"/>
+                <item
+                    android:id="@+id/subitem_aguaricoS"
+                    android:title="Aguarico"/>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_acercaDe"
+            android:title="Acerca De"
+            app:showAsAction="always" />
+
+    </group>
+
+</menu>

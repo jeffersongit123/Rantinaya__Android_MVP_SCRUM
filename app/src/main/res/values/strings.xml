@@ -1,3 +1,15 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">rantinaya</string>
+=======
+    <string name="app_name">Fragmento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="filter_options">
+        <item>Empresa</item>
+        <item>Servicio</item>
+        <item>Producto</item>
+    </string-array>
+
+>>>>>>> 1ddd08b4469dc0066adb20b6eec2e790ce4d64d1
 </resources>

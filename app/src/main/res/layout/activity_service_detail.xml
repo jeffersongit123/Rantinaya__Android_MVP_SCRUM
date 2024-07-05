@@ -27,7 +27,11 @@
             android:layout_marginBottom="4dp"
             android:gravity="center"
             android:lines="3"
+<<<<<<< HEAD
             android:text="Accediste a productos de"
+=======
+            android:text="Accediste a productos de "
+>>>>>>> Logout
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />

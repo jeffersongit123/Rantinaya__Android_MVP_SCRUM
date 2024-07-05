@@ -8,8 +8,12 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+<<<<<<< HEAD
 class
 SignUpPresenter(private var signUpView: SignUpContract?, private val signUpService: SignUpService)  {
+=======
+class SignUpPresenter(private var signUpView: SignUpContract?, private val signUpService: SignUpService)  {
+>>>>>>> Logout
 
     fun validateCredentials(
         firstName: String,

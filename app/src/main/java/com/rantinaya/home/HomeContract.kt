@@ -6,4 +6,10 @@ interface HomeContract {
     fun navigateToProducts( canton : String)
     fun onDestroy()
     fun navigateToServices(canton: String)
+<<<<<<< HEAD
+=======
+    fun showMessage(message : String)
+    fun openDialogLogout()
+
+>>>>>>> Logout
 }

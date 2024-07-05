@@ -9,4 +9,8 @@ interface LoginContract {
     fun navigateToHome()
     fun showError(message: String)
     fun showMessage(message: String)
+<<<<<<< HEAD
+=======
+    fun isLogged()
+>>>>>>> Logout
 }

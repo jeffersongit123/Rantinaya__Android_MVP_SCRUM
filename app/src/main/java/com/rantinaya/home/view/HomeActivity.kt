@@ -2,11 +2,21 @@ package com.rantinaya.home.view
 
 import android.content.Intent
 import android.os.Bundle
+<<<<<<< HEAD
+=======
+import android.widget.Toast
+>>>>>>> Logout
 import androidx.appcompat.app.AppCompatActivity
 import com.rantinaya.about.view.AboutActivity
 import com.rantinaya.databinding.ActivityHomeBinding
 import com.rantinaya.home.presenter.HomePresenter
 import com.rantinaya.home.HomeContract
+<<<<<<< HEAD
+=======
+import com.rantinaya.logout.data.LogoutService
+import com.rantinaya.login.view.LoginActivity
+import com.rantinaya.logout.view.DialogLout
+>>>>>>> Logout
 import com.rantinaya.utils.CantonEnum
 import com.rantinaya.products.view.ProductsActivity
 import com.rantinaya.services.view.ServiceActivity
@@ -33,6 +43,10 @@ class HomeActivity : AppCompatActivity(), HomeContract {
         binding.btnServiceAguarico.setOnClickListener { presenter.navigateToService(CantonEnum.Aguarico.name) }
         binding.btnServiceSachas.setOnClickListener { presenter.navigateToService(CantonEnum.Sacha.name) }
         binding.btnServiceOrellana.setOnClickListener { presenter.navigateToService(CantonEnum.Orellana.name) }
+<<<<<<< HEAD
+=======
+        binding.btnLogout.setOnClickListener { presenter.openDialogLogout() }
+>>>>>>> Logout
     }
 
     override fun navigateToAbout() {
@@ -59,4 +73,18 @@ class HomeActivity : AppCompatActivity(), HomeContract {
             this.putExtra("canton",canton)
         })
     }
+<<<<<<< HEAD
+=======
+
+    override fun showMessage(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun openDialogLogout() {
+        DialogLout(this) {
+            startActivity(Intent(this,LoginActivity::class.java))
+            finish()
+        }.show()
+    }
+>>>>>>> Logout
 }

@@ -7,9 +7,13 @@ class HomePresenter(var homeView: HomeContract?) {
     fun navigateToAbout() {
         homeView?.navigateToAbout()
     }
+<<<<<<< HEAD
     fun navigateToLogin() {
         homeView?.navigateToLogin()
     }
+=======
+
+>>>>>>> Logout
     fun navigateToProduct(canton : String) {
         homeView?.navigateToProducts(canton)
     }
@@ -19,4 +23,11 @@ class HomePresenter(var homeView: HomeContract?) {
     fun onDestroy() {
         homeView = null
     }
+<<<<<<< HEAD
+=======
+    fun openDialogLogout() {
+        homeView?.openDialogLogout()
+    }
+
+>>>>>>> Logout
 }

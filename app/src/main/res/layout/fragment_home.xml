@@ -1,26 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/availableBalanceTitleTextView"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="20dp"
-        android:text="Bienvenida"
-        android:background="@color/verde_oscuro"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="50dp">
+        <!-- ESPACIO MARGEN SUPERIOR android:layout_marginTop="32dp"  -->
 
-</FrameLayout>
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/label_mainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="@string/elementos_en_android"
+            android:textSize="19sp" />
+
+        <!-- Campo de entrada para el nombre -->
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/input_person"
+            android:drawablePadding="15dp"
+            android:layout_marginStart="20dp"
+            android:hint="@string/ingrese_el_nombre"/>
+
+        <!-- Campo de entrada para el apellido -->
+        <EditText
+            android:id="@+id/user_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/input_person2"
+            android:drawablePadding="15dp"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/ingrese_el_apellido"/>
+
+        <!-- Etiqueta para seleccionar el sexo -->
+        <TextView
+            android:id="@+id/label_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="8dp"
+            android:text="@string/seleccione_el_sexo"
+            android:textSize="18sp" />
+
+        <!-- Grupo de opciones de sexo -->
+        <RadioGroup
+            android:id="@+id/radioGroup_sexUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Opción para seleccionar "Hombre" -->
+            <RadioButton
+                android:id="@+id/rdHombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:padding="0dp"
+                android:text="@string/hombre" />
+
+            <!-- Opción para seleccionar "Mujer" -->
+            <RadioButton
+                android:id="@+id/rdMujer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:padding="0dp"
+                android:text="@string/mujer" />
+        </RadioGroup>
+
+        <!-- Etiqueta para seleccionar el medio de transporte -->
+        <TextView
+            android:id="@+id/label_transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccione_el_medio_de_transporte"
+            android:paddingLeft="20dp"
+            android:textSize="18sp" />
+
+        <!-- CheckBox para seleccionar "Carro" -->
+        <CheckBox
+            android:id="@+id/checkbox_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/carro"
+            android:layout_marginLeft="35dp" />
+
+        <!-- CheckBox para seleccionar "Moto" -->
+        <CheckBox
+            android:id="@+id/checkbox_motorcycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moto"
+            android:layout_marginLeft="35dp" />
+
+        <!-- CheckBox para seleccionar "Triciclo" -->
+        <CheckBox
+            android:id="@+id/checkbox_tricycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/triciclo"
+            android:layout_marginLeft="35dp" />
+
+        <!-- Etiqueta para seleccionar el rango de edad -->
+        <TextView
+            android:id="@+id/label_ageRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:paddingBottom="0dp"
+            android:text="@string/rango_de_edad"
+            android:textSize="18sp" />
+
+        <!-- Spinner para seleccionar el rango de edad -->
+        <Spinner
+            android:id="@+id/spinner_ageRange"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/array_ageRange" />
+
+        <!-- Botón para ingresar los datos -->
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_margin="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ingresarsp" />
+
+        <!-- Contenedor donde se agregarán dinámicamente los registros ingresados -->
+        <LinearLayout
+            android:id="@+id/registro_contenedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+

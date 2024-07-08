@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/white">
+
+    <!-- Campo para el nombre -->
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="16sp" />
+
+    <!-- Campo para el apellido -->
+    <TextView
+        android:id="@+id/apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apellido"
+        android:textSize="16sp" />
+
+    <!-- Campo para el sexo -->
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sexo"
+        android:textSize="16sp" />
+
+    <!-- Campo para el medio de transporte -->
+    <TextView
+        android:id="@+id/medio_transporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/medio_transporte"
+        android:textSize="16sp" />
+
+    <!-- Campo para el rango de edad -->
+    <TextView
+        android:id="@+id/rango_edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rango_edad"
+        android:textSize="16sp" />
+</LinearLayout>
+
+

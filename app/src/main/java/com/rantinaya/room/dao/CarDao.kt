@@ -21,4 +21,7 @@ interface CarDao {
 
     @Update
      fun updateItem(item : Car)
+
+     @Query("DELETE FROM car_table")
+     fun deleteAll()
 }

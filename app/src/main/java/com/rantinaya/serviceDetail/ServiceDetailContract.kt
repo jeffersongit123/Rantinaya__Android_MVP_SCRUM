@@ -1,5 +1,6 @@
 package com.rantinaya.serviceDetail
 
+import com.rantinaya.products.data.ProductByCanton
 import com.rantinaya.services.data.ServiceByCanton
 
 interface ServiceDetailContract {
@@ -7,5 +8,6 @@ interface ServiceDetailContract {
     fun setImages(list : List<Int>)
     fun openWeb(url : String)
     fun setColor(color : String)
-
+    fun openCar()
+    fun openAddProduct(serviceByCanton: ServiceByCanton)
 }

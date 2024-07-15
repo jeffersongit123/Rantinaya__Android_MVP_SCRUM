@@ -25,4 +25,12 @@ class ProductDetailPresenter(val view : ProductDetailContract?) {
     fun openWzp(product: ProductByCanton) {
         view?.openWeb(service.getRedes(product.Empresa).third)
     }
+
+    fun openCar() {
+        view?.openCar()
+    }
+
+    fun openAddProduct(product: ProductByCanton) {
+        view?.openAddProduct(product)
+    }
 }

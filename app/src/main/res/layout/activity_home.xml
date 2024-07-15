@@ -63,7 +63,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#dcdffd"
+                        app:cardBackgroundColor="@color/lavanda"
                         app:cardCornerRadius="8dp">
 
                         <LinearLayout
@@ -97,7 +97,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="12dp"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#dcdffd"
+                        app:cardBackgroundColor="@color/lavanda"
                         app:cardCornerRadius="8dp">
 
                         <LinearLayout
@@ -139,7 +139,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#dcdffd"
+                        app:cardBackgroundColor="@color/lavanda"
                         app:cardCornerRadius="8dp">
 
                         <LinearLayout
@@ -173,7 +173,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="12dp"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#dcdffd"
+                        app:cardBackgroundColor="@color/lavanda"
                         app:cardCornerRadius="8dp">
 
                         <LinearLayout
@@ -241,7 +241,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#dcdffd"
+                        app:cardBackgroundColor="@color/lavanda"
                         app:cardCornerRadius="8dp">
 
                         <LinearLayout
@@ -275,7 +275,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="12dp"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#dcdffd"
+                        app:cardBackgroundColor="@color/lavanda"
                         app:cardCornerRadius="8dp">
 
                         <LinearLayout
@@ -317,7 +317,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#dcdffd"
+                        app:cardBackgroundColor="@color/lavanda"
                         app:cardCornerRadius="8dp">
 
                         <LinearLayout
@@ -351,7 +351,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="12dp"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#dcdffd"
+                        app:cardBackgroundColor="@color/lavanda"
                         app:cardCornerRadius="8dp">
 
                         <LinearLayout
@@ -421,7 +421,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_car"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -438,6 +438,28 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Carrito de Compras"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/baseline_logout_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Cerrar Sesión"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>

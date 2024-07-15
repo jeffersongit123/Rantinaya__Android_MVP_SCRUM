@@ -5,6 +5,9 @@ import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.rantinaya.addProduct.view.DialogAddProduct
+import com.rantinaya.addService.view.DialogAddService
+import com.rantinaya.car.view.CarActivity
 import com.rantinaya.databinding.ActivityServiceDetailBinding
 import com.rantinaya.services.data.ServiceByCanton
 import com.rantinaya.serviceDetail.presenter.ServiceDetailPresenter
@@ -30,6 +33,7 @@ class ServiceDetailActivity : AppCompatActivity() , ServiceDetailContract {
             btnFace.setOnClickListener { presenter.openFace(service) }
             btnInst.setOnClickListener { presenter.openInst(service) }
             btnWzp.setOnClickListener { presenter.openWzp(service) }
+            btnCar.setOnClickListener { presenter.openAddProduct(service) }
         }
     }
 
@@ -67,5 +71,15 @@ class ServiceDetailActivity : AppCompatActivity() , ServiceDetailContract {
 
     override fun setColor(color: String) {
         binding.containerTitle.setBackgroundColor(Color.parseColor(color))
+    }
+
+    override fun openCar() {
+        startActivity(Intent(this, CarActivity::class.java))
+    }
+
+    override fun openAddProduct(serviceByCanton: ServiceByCanton) {
+        DialogAddService(this, item = serviceByCanton, callbackOpenCar = {
+            presenter.openCar()
+        }).show()
     }
 }

@@ -26,9 +26,9 @@ class AboutService : AboutServiceInterface {
             ),
             AboutMember(
                 name = "Jose Astudillo",
-                email = "JoseAstudillo17@gmail.com",
+                email = "josevillares03@gmail.com",
                 phone = "+593 98 844 6954",
-                links = Triple("https://gmail.com","https://www.linkedin.com/","https://www.github.com/")
+                links = Triple("https://gmail.com","https://www.linkedin.com/","https://www.github.com/scarlhos")
             ),
             AboutMember(
                 name = "Andres Viera",

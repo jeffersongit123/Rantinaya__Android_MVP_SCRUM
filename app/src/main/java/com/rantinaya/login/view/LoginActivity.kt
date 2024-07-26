@@ -20,13 +20,15 @@ class LoginActivity : AppCompatActivity() , LoginContract {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setListeners()
+        presenter.checkLogged(context = this)
     }
 
     private fun setListeners() {
         binding.btnSignUpUser.setOnClickListener { presenter.navigateToSignUp() }
         binding.btnSignIn.setOnClickListener { presenter.validateCredentials(
             binding.edtEmail.text.toString(),
-            binding.edtPassword.text.toString()
+            binding.edtPassword.text.toString(),
+            context = this
         ) }
     }
 
@@ -61,6 +63,11 @@ class LoginActivity : AppCompatActivity() , LoginContract {
 
     override fun showMessage(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun isLogged() {
+        startActivity(Intent(this, InitActivity::class.java))
+        finish()
     }
 
     override fun onDestroy() {

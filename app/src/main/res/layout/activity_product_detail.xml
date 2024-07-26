@@ -211,15 +211,13 @@
         android:id="@+id/linearLayout9"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:orientation="horizontal"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
         <ImageView
             android:id="@+id/btn_face"
@@ -237,19 +235,23 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             app:srcCompat="@drawable/insta" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
+
         <ImageView
             android:id="@+id/btn_wzp"
             android:layout_width="60dp"
             android:layout_height="60dp"
             app:srcCompat="@drawable/what" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
+
         <ImageView
             android:id="@+id/btn_car"
             android:layout_width="60dp"

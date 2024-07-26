@@ -1,5 +1,6 @@
 package com.rantinaya.serviceDetail.presenter
 
+import com.rantinaya.products.data.ProductByCanton
 import com.rantinaya.services.data.ServiceByCanton
 import com.rantinaya.utils.modelBackUp.listImageInfoServices
 import com.rantinaya.serviceDetail.ServiceDetailContract
@@ -26,5 +27,12 @@ class ServiceDetailPresenter (val view : ServiceDetailContract?) {
 
     fun openWzp(serviceByCanton: ServiceByCanton) {
         view?.openWeb(service.getRedes(serviceByCanton.Servicio).third)
+    }
+
+    fun openCar() {
+        view?.openCar()
+    }
+    fun openAddProduct(service: ServiceByCanton) {
+        view?.openAddProduct(service)
     }
 }

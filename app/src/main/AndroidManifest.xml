@@ -2,11 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
 
-=======
->>>>>>> 1ddd08b4469dc0066adb20b6eec2e790ce4d64d1
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,10 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
         android:theme="@style/Theme.Rantinaya"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".car.view.CarActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
         <activity
             android:name=".serviceDetail.view.ServiceDetailActivity"
             android:exported="false" />
@@ -29,28 +29,17 @@
             android:name=".about.view.AboutActivity"
             android:exported="false" />
         <activity
-            android:name=".view.DetailActivity"
-            android:exported="false" />
-        <activity
             android:name=".signup.view.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".login.view.LoginActivity"
-            android:exported="true" >
-=======
-        android:theme="@style/Theme.Fragmento"
-        tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
->>>>>>> 1ddd08b4469dc0066adb20b6eec2e790ce4d64d1
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity
             android:name=".services.view.ServiceActivity"
             android:exported="false" />
@@ -62,18 +51,10 @@
             android:exported="false" />
         <activity
             android:name=".init.view.InitActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="false" />
     </application>
-=======
-
-    </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
->>>>>>> 1ddd08b4469dc0066adb20b6eec2e790ce4d64d1
 
 </manifest>

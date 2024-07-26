@@ -19,10 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-<<<<<<< HEAD
 rootProject.name = "rantinaya"
-=======
-rootProject.name = "Fragmento"
->>>>>>> 1ddd08b4469dc0066adb20b6eec2e790ce4d64d1
 include(":app")
  

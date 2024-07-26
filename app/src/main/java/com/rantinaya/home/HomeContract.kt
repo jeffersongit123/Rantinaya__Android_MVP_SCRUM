@@ -6,4 +6,8 @@ interface HomeContract {
     fun navigateToProducts( canton : String)
     fun onDestroy()
     fun navigateToServices(canton: String)
+    fun showMessage(message : String)
+    fun openDialogLogout()
+    fun openCar()
+
 }

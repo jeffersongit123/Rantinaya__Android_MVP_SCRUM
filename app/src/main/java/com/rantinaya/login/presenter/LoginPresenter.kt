@@ -1,5 +1,6 @@
 package com.rantinaya.login.presenter
 
+import android.content.Context
 import com.rantinaya.login.data.LoginService
 import com.rantinaya.login.data.LoginServiceInterface
 import com.rantinaya.login.LoginContract
@@ -10,7 +11,16 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class LoginPresenter (var loginView: LoginContract?, private val loginService: LoginService){
-    fun validateCredentials(email: String, password: String) {
+
+    fun checkLogged(context: Context) {
+        loginService.checkLogin(context,object : LoginServiceInterface.CheckLoginCallback {
+            override fun isLogged() {
+                loginView?.isLogged()
+            }
+        })
+    }
+
+    fun validateCredentials(email: String, password: String, context: Context) {
         if (email.isEmpty()) {
             loginView?.setEmailError("Email es requerido")
             return
@@ -28,7 +38,7 @@ class LoginPresenter (var loginView: LoginContract?, private val loginService: L
 
         loginView?.showProgress()
         CoroutineScope(Dispatchers.IO).launch {
-            loginService.login(email, password, object : LoginServiceInterface.LoginCallback {
+            loginService.login(email, password, context,object : LoginServiceInterface.LoginCallback {
                 override fun onSuccess(response: LoginResponse) {
                     loginView?.hideProgress()
                     loginView?.showMessage(response.message)

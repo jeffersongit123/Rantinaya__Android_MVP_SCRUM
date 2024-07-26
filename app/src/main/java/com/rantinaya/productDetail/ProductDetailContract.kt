@@ -7,4 +7,6 @@ interface ProductDetailContract {
     fun setImages(list : List<Int>)
     fun openWeb(url : String)
     fun setColor(color : String)
+    fun openCar()
+    fun openAddProduct(product: ProductByCanton)
 }

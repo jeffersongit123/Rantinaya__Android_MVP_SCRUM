@@ -27,7 +27,7 @@
             android:layout_marginBottom="4dp"
             android:gravity="center"
             android:lines="3"
-            android:text="Accediste a productos de"
+            android:text="Accediste a productos de "
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -250,7 +250,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/btn_car"
             android:layout_width="60dp"
             android:layout_height="60dp"
             app:srcCompat="@drawable/shop_ca" />
